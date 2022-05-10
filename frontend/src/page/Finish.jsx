@@ -9,7 +9,7 @@ const Finish = () =>{
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch("https://1e18ef0e-9020-4c00-92ee-707fde8b3c0b.mock.pstmn.io"+window.location.pathname)
+        fetch("https://1e18ef0e-9020-4c00-92ee-707fde8b3c0b.mock.pstmn.io/Showinfo/"+window.location.pathname.substring(7))
           .then(res => res.json())
           .then(
             (result) => {

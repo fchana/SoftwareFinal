@@ -23,7 +23,7 @@ const Navigation = () => {
           <Routes>
             <Route name="home" path="/" element={<Signup/>}></Route>
             <Route name="home" path="/showinfo/:uid" element={<Showinfo/>}></Route>
-            <Route name="home" path="/finish" element={<Finish/>}></Route>
+            <Route name="home" path="/finish/:uid" element={<Finish/>}></Route>
           </Routes>
         </BrowserRouter>
       </>

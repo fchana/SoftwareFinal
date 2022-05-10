@@ -43,7 +43,7 @@ const Showinfo = (props) =>{
   </ListGroup>
     <Card.Body>
     <Button variant="primary" style={{width: "400px"}}>
-    <Link style={{  textDecorationLine: "none", color: "white"}} to={`/finish`}>Confirm</Link>
+    <Link style={{  textDecorationLine: "none", color: "white"}} to={`/finish`+window.location.pathname.substring(9)}>Confirm</Link>
     </Button>
     <Button variant="danger" style={{width: "400px"}}>
     <Link style={{  textDecorationLine: "none", color: "white"}} to={`/`}>Cancel</Link>
