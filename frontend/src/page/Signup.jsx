@@ -1,10 +1,12 @@
 import { Button, InputGroup, FormControl, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
+import Showinfo from './Showinfo';
 
 
 const Signup = () =>{
+  const [Uid, setUid] = useState('');
     return(
 <div className="App">
 <header className="App-header">
@@ -18,10 +20,11 @@ const Signup = () =>{
 <FormControl
 placeholder="รหัสบัตรประจำตัวประชาชน"
 aria-label="uid"
+value={ Uid } onChange={ (e) => setUid(e.target.value)}
 />
 </InputGroup>
 <Button variant="primary">
-  <Link style={{  textDecorationLine: "none", color: "white"}} to={`/Showinfo`} >Sign up</Link>
+  <Link style={{  textDecorationLine: "none", color: "white"}} to={`/Showinfo/`+Uid} >Sign up</Link>
 </Button>
 </Card.Body>
 <Card.Footer className="text-muted">True Vaccine</Card.Footer>

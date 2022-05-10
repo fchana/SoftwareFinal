@@ -22,7 +22,7 @@ const Navigation = () => {
           </Navbar>
           <Routes>
             <Route name="home" path="/" element={<Signup/>}></Route>
-            <Route name="home" path="/showinfo" element={<Showinfo/>}></Route>
+            <Route name="home" path="/showinfo/:uid" element={<Showinfo/>}></Route>
             <Route name="home" path="/finish" element={<Finish/>}></Route>
           </Routes>
         </BrowserRouter>
