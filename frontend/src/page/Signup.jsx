@@ -8,10 +8,9 @@ const Signup = () =>{
     return(
 <div className="App">
 <header className="App-header">
-<img src={`https://app.dtac.co.th/vaccine/assets/images/logo-dtac@2x.png`} alt="logo" style={{marginRight: '1050px', marginBottom: '50px'}}/>
-  <img src={`https://app.dtac.co.th/vaccine/assets/images/banner/WebBanner-desktop-1120x400-Th_2022-Apr-28.jpg`} style={{marginBottom: '25px'}} alt="logo" />
+  <img src={`https://vaccine.trueid.net/static/media/banner.af9b098f.jpg`} style={{marginBottom: '25px', width: "50%"}} alt="logo" />
   <Card className="text-center" style={{width: '50%'}}>
-<Card.Header style={{color: 'black'}}>ดีแทค เปิดลงทะเบียน รับการฉีดวัคซีนโควิด-19</Card.Header>
+<Card.Header style={{color: 'black'}}>ทรู เปิดลงทะเบียน รับการฉีดวัคซีนโควิด-19</Card.Header>
 <Card.Body style={{color: 'black'}}>
 <Card.Title>กรุณากรอกรหัสบัตรประชาชน</Card.Title>
 <InputGroup className="mb-3">
@@ -21,9 +20,11 @@ placeholder="รหัสบัตรประจำตัวประชาช�
 aria-label="uid"
 />
 </InputGroup>
-<Button variant="primary">Sign up</Button>
+<Button variant="primary">
+  <Link style={{  textDecorationLine: "none", color: "white"}} to={`/Showinfo`} >Sign up</Link>
+</Button>
 </Card.Body>
-<Card.Footer className="text-muted">Dtac Vaccine</Card.Footer>
+<Card.Footer className="text-muted">True Vaccine</Card.Footer>
 </Card>
 </header>
 </div>
