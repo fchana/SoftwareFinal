@@ -2,30 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 import {Card, Button, FormControl, InputGroup} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './component/navigation';
 
-function App() {
+const App = () => {
+  // const { loading, error, data, refetch } = useQuery(
+  //   POSTS_QUERY,
+  //   {
+  //     variables: {
+  //       postLimit: 4,
+  //     },
+  //     // fetchPolicy: 'no-cache',
+  //     // pollInterval: 1000,
+  //   },
+  // )
+  // if (loading) {
+  //   return <h4>Loading ...</h4>
+  // }
+  // if (error) {
+  //   return <h4>Error: {error.message}</h4>
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-      <img src={`https://app.dtac.co.th/vaccine/assets/images/logo-dtac@2x.png`} alt="logo" style={{marginRight: '1050px', marginBottom: '50px'}}/>
-        <img src={`https://app.dtac.co.th/vaccine/assets/images/banner/WebBanner-desktop-1120x400-Th_2022-Apr-28.jpg`} style={{marginBottom: '25px'}} alt="logo" />
-        <Card className="text-center" style={{width: '50%'}}>
-  <Card.Header style={{color: 'black'}}>ดีแทค เปิดลงทะเบียน รับการฉีดวัคซีนโควิด-19</Card.Header>
-  <Card.Body style={{color: 'black'}}>
-    <Card.Title>กรุณากรอกรหัสบัตรประชาชน</Card.Title>
-    <InputGroup className="mb-3">
-    <InputGroup.Text id="uid">กรุณากรอกรหัสบัตรประชาชน</InputGroup.Text>
-    <FormControl
-      placeholder="รหัสบัตรประจำตัวประชาชน"
-      aria-label="uid"
-    />
-  </InputGroup>
-    <Button variant="primary">Sign up</Button>
-  </Card.Body>
-  <Card.Footer className="text-muted">Dtac Vaccine</Card.Footer>
-</Card>
-      </header>
-    </div>
+    // <main style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+    //   <Posts posts={data.posts} refetch={refetch} />
+    //   <CreatePost refetch={refetch} />
+    // </main>
+    <Navigation />
   );
 }
 
