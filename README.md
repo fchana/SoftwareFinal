@@ -9,6 +9,6 @@
 * 124xxxxxxxx00
 * 123
 
- ![image](https://user-images.githubusercontent.com/56545080/167600299-6b82f4b6-aa12-44c3-9b7c-b59b1a532f88.png)
- ![image](https://user-images.githubusercontent.com/56545080/167600440-95998b28-1047-41ee-938c-d762c9c6c085.png)
- ![image](https://user-images.githubusercontent.com/56545080/167600521-b600f63d-45e4-4a51-a9dd-1dd7f25b920c.png)
+1. ![image](https://user-images.githubusercontent.com/56545080/167600299-6b82f4b6-aa12-44c3-9b7c-b59b1a532f88.png)
+2. ![image](https://user-images.githubusercontent.com/56545080/167600440-95998b28-1047-41ee-938c-d762c9c6c085.png)
+3. ![image](https://user-images.githubusercontent.com/56545080/167600521-b600f63d-45e4-4a51-a9dd-1dd7f25b920c.png)
